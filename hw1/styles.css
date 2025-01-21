@@ -1,0 +1,30 @@
+* {padding: 0;
+    margin: 0;}
+    
+    html {
+      height: 100%;
+      width: 100%;
+      background-color: lightyellow;
+    }
+    
+    .wrapper {background-color: tan;
+             margin: auto;}
+    
+    h1 {position: relative;
+    text-align: center;}
+    
+    p {margin: 0 auto;
+      position: relative;
+      float:center;
+      text-align: center;
+      font-size: 25px;
+      line-height: 30px;}
+    
+    h2 {position: relative;
+    text-align: center;}
+    
+    .content {background-color: lightgray;
+             width:500px;
+             margin: 0 auto;
+             padding: 10px;}
+    
