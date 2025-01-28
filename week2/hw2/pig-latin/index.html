@@ -1,0 +1,46 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pig Latin Translator</title>
+</head>
+<body>
+    <input type="text" id="wordInput" placeholder="Enter a word">
+    <button onclick="translatePhrase()">Translate</button>
+    <p id="result"></p>
+
+    <script>
+        function isVowel(char) {
+            return 'aeiouAEIOU'.includes(char);
+        }
+
+        function translateWord(word) {
+            if (!word || word.length <= 1) {
+                return word;
+            }
+
+            if (isVowel(word[0])) {
+                return word + 'way';
+            } else if (!isVowel(word[0]) && word.length > 1 && !isVowel(word[1])) {
+                return word.slice(2) + word.slice(0, 2) + 'ay';
+            } else {
+                return word.slice(1) + word[0] + 'ay';
+            }
+        }
+
+        function translatePhrase() {
+            let phrase = document.getElementById('wordInput').value.trim();
+            
+            if (!phrase) {
+                document.getElementById('result').textContent = "Error: Please enter a word or phrase";
+                return;
+            }
+
+            let words = phrase.split(' ');
+            let translatedWords = words.map(translateWord);
+            document.getElementById('result').textContent = translatedWords.join(' ');
+        }
+    </script>
+</body>
+</html>
