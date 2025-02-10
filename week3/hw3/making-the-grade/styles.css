@@ -1,0 +1,60 @@
+
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .container {
+      max-width: 600px;
+      margin: 20px auto;
+      padding: 15px;
+      font-family: Arial, sans-serif;
+      background: #f5f5f5;
+      border-radius: 5px;
+  }
+  
+  h1 {
+      margin-bottom: 20px;
+      font-size: 20px;
+      text-align: center;
+  }
+  
+  .student-list {
+      margin: 20px 0;
+      line-height: 1.5;
+      border-radius: 5px;
+      padding: 15px;
+  }
+  
+  table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 10px 0;
+  }
+  
+  th, td {
+      padding: 8px;
+      text-align: left;
+      border-bottom: 1px solid #ddd;
+  }
+  
+  th {
+      background-color: #f2f2f2;
+      font-weight: bold;
+  }
+  
+  tr:hover {
+      background-color: #f9f9f9;
+  }
+  
+  .mystats {
+      background: #f5f5f5;
+      padding: 15px;
+      border-radius: 5px;
+      line-height: 1.5;
+  }
+  
+  .mystats h3 {
+      margin-bottom: 10px;
+  }
+  
