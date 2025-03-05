@@ -1,0 +1,53 @@
+html {
+    height: 100%;
+    width: 100%;
+  }
+  
+  body {
+    margin: auto;
+    max-width: 400px;
+    font-family: sans-serif;
+    text-align: center;
+  }
+  
+  main {
+    text-align: left;
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px;
+    box-sizing: border-box;
+  }    
+  
+  .test-results {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background: #444;
+    color: white;
+    box-shadow: 4px 4px rgba(0, 0, 0, .3);
+    padding: 4px;
+    margin: 0;
+  }
+  .test-results li {
+    position: relative;
+    width: 100%;
+    display: block;
+    list-style-type: none;
+    padding-right: 24px;
+  }
+  .test-results [pass]::after, .test-results [fail]::after {
+    padding: 0 4px;
+    border-radius: 4px;
+    position: absolute;
+    right: 20px;
+  }
+  .test-results [pass]::after {
+    content: "ok";
+    color: white;
+    background: darkolivegreen;
+  }
+  .test-results [fail]::after {
+    content: "X";
+    color: white;
+    background: firebrick;
+  }
