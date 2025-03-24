@@ -1,0 +1,25 @@
+{
+  "name": "nodejs-app",
+  "version": "1.0.0",
+  "description": "npm init demo",
+  "keywords": [
+    "npm",
+    "package",
+    "generate"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MrYanez/it121-repo.git#main"
+  },
+  "license": "MIT",
+  "author": "nahum",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
